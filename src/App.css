@@ -1,0 +1,33 @@
+.piece::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px black solid;
+  left: 120px;
+  z-index: -1;
+}
+.piece2::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px black solid;
+  right: 70px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 720px) {
+  .piece::before {
+    width: 86%;
+    height: 76%;
+    left: 25px;
+    margin-top: 60px;
+  }
+  .piece2::before {
+    width: 86%;
+    height: 76%;
+    left: 25px;
+    margin-top: 60px;
+  }
+}
